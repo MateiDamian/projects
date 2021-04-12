@@ -8,7 +8,6 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-//in aceasta clasa vom crea imaginea de inceput a jocului
 
 public class MenuPanel extends JPanel {
 
@@ -16,11 +15,10 @@ public class MenuPanel extends JPanel {
 
 
 
-    private BufferedImage img=null;// imaginea este inital nula
-    public boolean StartingPoint=false;// se va folosi pentru inceperea jocului propriu-zis
-    // cat timp este False, pe ecran va aparea imaginea initala
+    private BufferedImage img=null;
+    public boolean StartingPoint=false;
+    
 
-    // cand vom da click oriunde in imagine, va incepe jocul
     public MenuPanel(){
 
         LoadImage();
@@ -33,7 +31,7 @@ public class MenuPanel extends JPanel {
         });
     }
 
-    // in aceasta metoda este incarcata imaginea de inceput a jocului
+
 
     private void LoadImage() {
 
@@ -43,7 +41,7 @@ public class MenuPanel extends JPanel {
             ex.printStackTrace();
         }
     }
-    // metoda de desenare
+
 
     @Override
     public void paint(Graphics g){
